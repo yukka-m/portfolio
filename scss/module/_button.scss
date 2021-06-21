@@ -1,0 +1,10 @@
+.contact-btn {
+    font-size: 1.375rem;
+    background-image: linear-gradient(#4d58ff, #6eddff);
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 32px;
+    &:hover{
+        background: #0090aa;
+    }
+}

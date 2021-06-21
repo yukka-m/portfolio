@@ -1,0 +1,25 @@
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+@mixin sm {
+    @media (max-width: ($sm)) {
+        @content;
+    }
+
+}@mixin md {
+    @media (max-width: ($md)) {
+        @content;
+    }
+
+}@mixin lg {
+    @media (max-width: ($lg)) {
+        @content;
+    }
+
+}@mixin sxl {
+    @media (max-width: ($xl)) {
+        @content;
+    }
+}

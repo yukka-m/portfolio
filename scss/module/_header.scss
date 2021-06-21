@@ -1,0 +1,107 @@
+#home {
+    @include md {
+        height: 500px;
+    }
+    background-image: url(../img/top-image.jpg);
+    max-width: 150vh;
+    margin: auto;
+}
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: rgba(178, 200, 200, 0.25);
+    background-blend-mode: hard-light;
+    width: 100%;
+    height: 600px;
+    
+}
+.header {
+    &-inner {
+        @include md {
+            flex-direction: column;
+            align-items: center;
+        }
+        display: flex;
+        justify-content: space-between;
+        
+
+        img{
+            margin: auto 0;
+            width: 55px;
+            height: 55px;
+            
+        }
+    }
+    &-rog {
+        display: flex;
+        background-color: aliceblue;
+
+    }
+    &-ttl {
+        font-size: 24px;
+        font-weight: bold;
+        margin: auto 0;
+
+    }
+    &-nav {
+        ul {
+            @include md {
+                font-size: 1.5rem;
+                margin: {
+                    top: 10px;
+                }
+            }
+            display: flex;
+            text-align: right;
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            margin-top: 34px;
+            list-style: none;
+        }
+        li {
+            @include md {
+                margin: {
+                    left: 30px;
+                }
+            }
+            margin-left: 36px;
+            &:hover {
+                box-shadow: 0 5px 10px black;
+                transform: translate(0, -5px);
+            }
+        }
+        a {
+            display: flex;
+            color: #432;
+            :hover{
+                color: #0bd;
+            }
+        }
+    }
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+/*HOME*/
+.home{
+    &-content{
+        @include content-margin (10%);
+    }
+    &-copy{
+        p{
+            @include copy-font;
+            margin: 10px 0 42px;
+        }
+    }
+}
+.page-title {
+    @include wrapper-font;
+     @include md {
+            font-size: 40px;
+    }
+}
